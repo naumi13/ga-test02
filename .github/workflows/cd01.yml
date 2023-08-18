@@ -13,6 +13,7 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
+        apt-get install yarn 
         yarn install
         yarn build
     - name: Deploy
